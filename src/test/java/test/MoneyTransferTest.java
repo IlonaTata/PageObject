@@ -30,10 +30,10 @@ public class MoneyTransferTest {
     public void shouldTransferMoneyFromFirstCardToSecondCard() {
         int amount = 3_000;
         val dashboardPage = new DashboardPage();
-        val transferPage= new TransferPage();
         val firstCardBalanceBeforeTransfer = dashboardPage.getFirstCardBalance();
         val secondCardBalanceBeforeTransfer = dashboardPage.getSecondCardBalance();
         dashboardPage.pushSecondCardButton();
+        val transferPage= new TransferPage();
         transferPage.transferMoney(amount, getFirstCardNumber());
         val firstCardBalance = firstCardBalanceBeforeTransfer - amount;
         val secondCardBalance = secondCardBalanceBeforeTransfer + amount;

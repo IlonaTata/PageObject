@@ -18,7 +18,9 @@ dependencies {
     implementation 'org.projectlombok:lombok:1.18.22'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
     testImplementation 'com.codeborne:selenide:5.19.0'
-
+    testImplementation 'io.cucumber:cucumber-java:7.1.0'
+    testImplementation 'io.cucumber:cucumber-junit:7.1.0'
+    testImplementation 'org.slf4j:slf4j-simple:1.7.32'
 }
 
 test {

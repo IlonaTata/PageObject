@@ -16,7 +16,7 @@ public class DashboardPage {
     private ElementsCollection buttons = $$("[data-test-id=action-deposit] .button__content");
     private SelenideElement transferFirstCardButton = $("[data-test-id='92df3f1c-a033-48e6-8390-206f6b1f56c0'] > .button");
     private SelenideElement transferSecondCardButton = $("[data-test-id='0f3f5c2a-249e-4c3d-8287-09f7a039391d'] > .button");
-      private SelenideElement heading = $("[data-test-id=dashboard]");
+      SelenideElement heading = $("[data-test-id=dashboard]");
 
 
     public DashboardPage() {
